@@ -1,4 +1,4 @@
-import { API_ABOUT_ENDPOINT } from "@/const";
+import { API_ABOUT_ENDPOINT } from "@/constant";
 import getData from "@/libs/getData";
 
 export default async function About() {
@@ -6,14 +6,14 @@ export default async function About() {
   const aboutContent = data?.data?.[0]?.content?.page_content;
 
   return (
-    <main className="w-full h-full">
-      {aboutContent === null || aboutContent === undefined ? (
+    <article className="w-full h-full">
+      {!aboutContent || aboutContent === null ? (
         <div className="w-full flex justify-center mt-20">
-          No content to show.
+          <p>No content to show.</p>
         </div>
       ) : (
         <div>{aboutContent}</div>
       )}
-    </main>
+    </article>
   );
 }

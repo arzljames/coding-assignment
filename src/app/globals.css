@@ -27,3 +27,29 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+div.card ul {
+  margin-top: 1rem;
+}
+
+div.card ul li {
+  margin-left: 2rem;
+  list-style: disc;
+}
+
+div.card button {
+  color: rgb(88, 114, 230);
+  background: rgb(240, 243, 255);
+  padding: 4px 8px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: .2s ease-in-out;
+}
+
+div.card button:hover {
+  background: rgb(88, 114, 230);
+  color: #fff;
+  transition: .2s ease-in-out;
+}

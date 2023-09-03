@@ -5,11 +5,13 @@ export const API_ABOUT_ENDPOINT =
 
 export const NAV_LINKS = [
   {
+    key: "home",
     name: "Home",
-    path: "/",
+    href: "/",
   },
   {
+    key: "about",
     name: "About",
-    path: "/about",
+    href: "/about",
   },
 ];
